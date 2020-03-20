@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - master
+
+env:
+  DEPLOY_ENV: GH_PAGES
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
