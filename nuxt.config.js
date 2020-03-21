@@ -1,11 +1,6 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-    router: {
-        base: '/chycho-grid/'
-    }
-} : {}
+require('dotenv').config()
 
 export default {
-    ...routerBase,
   mode: 'universal',
   /*
   ** Headers of the page
@@ -56,6 +51,6 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
+  }
 
 }
