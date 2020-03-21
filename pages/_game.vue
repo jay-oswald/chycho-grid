@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import Game from '~/components/game.vue'
 import { mapActions, mapGetters } from 'vuex'
+import Game from '~/components/game.vue'
 
 export default {
   components: {
