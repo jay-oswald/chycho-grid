@@ -11,9 +11,9 @@ jobs:
     steps:
     - name: Authenticate into Google Cloud Platform
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
-        with:
-          service_account_email: ${{ secrets.GCLOUD_EMAIL }}
-          service_account_key: ${{ secrets.GCLOUD_AUTH }}
+      with:
+        service_account_email: ${{ secrets.GCLOUD_EMAIL }}
+        service_account_key: ${{ secrets.GCLOUD_AUTH }}
     - name: Checkout the repository
       uses: actions/checkout@v2
     - name: Yarn Install and Build
